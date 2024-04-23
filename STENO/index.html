@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ikoner -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Javacript -->
+    <script src="intro.js" defer></script>
+    <title>Intro</title>
+  </head>
+  <body>
+    <main>
+      <div class="karakter-intro">
+        <div class="intro_video-wrapper">
+          <video id="intro_videoPlayer">
+            <source src="video/pigeintro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div id="intro_playKnap" class="intro_play-knap">
+            <img src="images/play.png" alt="play-knap" />
+          </div>
+          <div class="intro-tekst">
+            <h1>Start din rejse her</h1>
+          </div>
+          <div class="intro_velkomst-tekst">
+            <p id="intro_paragraf"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer_start">
+        <button class="nav_knap" onclick="window.location.href='index.html'">
+          <i class="bx bxs-circle start"></i>
+        </button>
+        <p class="footer_p">Start forfra</p>
+      </div>
+      <nav class="nav_boks">
+        <div class="pil_hojre">
+          <button class="nav_knap" onclick="window.location.href='menu.html'">
+            <!-- Ved klik bliver brugeren taget til outrosiden -->
+            <i class="bx bxs-right-arrow pil"></i>
+          </button>
+          <p class="footer_p">Videre</p>
+        </div>
+      </nav>
+      <!-- Div, hvori flagene vises -->
+      <div class="sprog_flag">
+        <div class="dk">
+          <img src="images/flag-dk.png" alt="Dansk sprog" class="flag" />
+        </div>
+        <div class="eng">
+          <img src="images/flag-eng.png" alt="English language" class="flag" />
+        </div>
+        <div class="tysk">
+          <img src="images/flag-tysk.png" alt="Deutsche Sprache" class="flag" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1990'erne</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Ikoner -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!--Musik-->
+    <audio autoplay id="halvfems_musik">
+      <source src="lyd/1990'erne.mp3">
+  </audio>
+    <!-- Container, der gør hele siden en bestemt bredde og højde -->
+    <div class="tablet_container">
+      <main>
+        <h1 class="halvfems_h1">1990'ERNE</h1>
+        <!-- Container til flexboks opsætning -->
+        <div class="halvfems_flex1">
+          <div class="halvfems_ideal">
+            <h2 class="halvfems_ideal_h2">Ghettoblastere og chatrum</h2>
+            <p class="halvfems_ideal_p">
+              I 1990'erne er du en del af en generation på kanten af forandring.
+              Ghettoblasteren spiller Britney Spears og Nirvana, og lavalampen
+              gløder på natbordet. I biografen har “Pulp Fiction" premiere og
+              derhjemme ringer du internettet op på telefonen for at få adgang
+              til chatrum som Ofir.”
+            </p>
+          </div>
+          <div class="halvfems_ideal_2">
+            <h2 class="halvfems_ideal_h2_2">'Heroin-chic'</h2>
+            <p class="halvfems_ideal_p_2">
+              I modebladene og musikvideoer på MTV fremstod tidens idealer. Det
+              tynde look uden former var in. 'Heroin-chic' begrebet opstår og
+              betyder tynd krop, bleg hud og mørke rander under øjnene.
+              Spice-Girls blev utroligt populære og folk klæder sig som dem.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1970'er kvinde -->
+        <div class="halvfemsKvinde">
+          <img src="images/90dame.png" alt="1990'er kvinde" />
+        </div>
+
+        <!-- Stickers -->
+        <div class="halvfems_lava">
+          <img src="images/lavalampe.png" alt="Lava-lampe" />
+        </div>
+        <div class="halvfems_boombox">
+          <img src="images/boombox.png" alt="boombox" />
+        </div>
+        <div class="halvfems_discman">
+          <img src="images/discman.png" alt="discman" />
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <!-- rund knap henviser til start/intro -->
+        <div class="footer_start">
+          <button class="nav_knap" onclick="window.location.href='index.html'">
+            <i class="bx bxs-circle start"></i>
+          </button>
+          <p class="footer_p">Start forfra</p>
+        </div>
+
+        <nav class="nav_boks">
+          <!-- pil V henviser til 1970'erne-->
+          <div class="pil_venstre">
+            <button class="nav_knap" onclick="window.location.href='1970.html'">
+              <i class="bx bxs-left-arrow pil"></i>
+            </button>
+            <p class="footer_p">1970'erne</p>
+          </div>
+
+          <div class="footer_hjem">
+            <button class="nav_knap" onclick="window.location.href='menu.html'">
+              <i class="bx bxs-home hjem"></i>
+            </button>
+            <p class="footer_p">Menu</p>
+          </div>
+
+          <!-- pil H henviser til 2010'erne -->
+          <div class="pil_hojre">
+            <button
+              class="nav_knap"
+              onclick="window.location.href='2010.html'">
+              <i class="bx bxs-right-arrow pil"></i>
+            </button>
+            <p class="footer_p">2010'erne</p>
+          </div>
+        </nav>
+        <!-- Div, hvori flagene vises -->
+        <div class="sprog_flag">
+          <div class="dk">
+            <img src="images/flag-dk.png" alt="Dansk sprog" class="flag" />
+          </div>
+          <div class="eng">
+            <img
+              src="images/flag-eng.png"
+              alt="English language"
+              class="flag"
+            />
+          </div>
+          <div class="tysk">
+            <img
+              src="images/flag-tysk.png"
+              alt="Deutsche Sprache"
+              class="flag"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

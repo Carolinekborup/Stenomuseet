@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halvtredserne</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ikoner -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!--Musik-->
+    <audio autoplay id="halvtreds_musik">
+        <source src="lyd/1950'erne.mp3">
+    </audio>
+
+    <!-- hele siden som flexbox -->
+    <div class="tablet_container">
+        <main>
+            <!--Øverste overskrift-->
+            <h1>1950'erne</h1>
+
+            <!-- flexbox til alt indhold -->
+            <div class="halvtreds_flex_container">
+                <!-- Flexbox venstre side-->
+                <div id="halvtreds_V_flex">
+                    <div>
+                        <img src="images/50dame.png" alt="1950'er krop" id="halvtreds_img_krop">
+                    </div>
+
+                    <div>
+                        <img src="images/filmrulle.png" alt="" id="halvtreds_img_filmrulle">
+                    </div>
+                </div>
+
+                <!-- Flexbox højre side-->
+                <div id="halvtreds_H_flex">
+                    <!-- øverste tekst -->
+                    <section id="halvetreds_tekst1">
+                        <h2>De travle kvinder</h2>
+                        <p>I 1950’erne står du i en tid hvor mange kvinder vender tilbage til husmoderrollen, men nu med
+                            et lille twist. Som kvinde skal du nu både arbejde og holde hus. Kvindernes arbejdsuge
+                            nærmer sig de 70-80 timer og de har derfor mindre tid til at sørge for at huset står pænt.
+                            Dog vender håbet tilbage efter 2. verdenskrig, og der er nu plads til masser af musik,
+                            farver og dans.</p>
+                    </section>
+
+                    <!-- midert sektion (billeder)-->
+                    <div id="halvtreds_img_ikonerH">
+                        <div>
+                            <img src="images/milkshake.png" alt="milkshake ikon" id="halvtreds_img_ms">
+                        </div>
+
+                        <div>
+                            <img src="images/lp.png" alt="lp" id="halvtreds_img_lp">
+                        </div>
+                    </div>
+
+                    <!-- nederste tekst -->
+                    <section>
+                        <h2>Kurvede sexsymboler</h2>
+                        <p>I 1950’erne blev det populært at have kurvede former og en smal
+                            talje, dette var det
+                            amerikanske sexsymbol Marilyn Monroe indbegrebet af. De unge kvinder drømte om at slå sig
+                            løs med svingende skørter, dansen jitterbug og rock ‘n’ roll.</p>
+                    </section>
+
+                </div>
+
+
+
+            </div>
+
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- rund knap henviser til start/intro -->
+            <div class="footer_start">
+                <button class="nav_knap" onclick="window.location.href='index.html'">
+                    <i class='bx bxs-circle start'></i>
+                </button>
+                <p class="footer_p">Start forfra</p>
+            </div>
+
+            <nav class="nav_boks">
+                <!-- pil V henviser til renæssancen -->
+                <div class="pil_venstre">
+                    <button class="nav_knap" onclick="window.location.href='renaessance.html'">
+                        <!-- Ved klik bliver brugeren taget til renæssancen -->
+                        <i class='bx bxs-left-arrow pil'></i></button>
+                    <p class="footer_p">Renæssancen</p>
+                </div>
+
+                <div class="footer_hjem">
+                    <button class="nav_knap" onclick="window.location.href='menu.html'">
+                        <i class='bx bxs-home hjem'></i>
+                    </button>
+                    <p class="footer_p">Menu</p>
+                </div>
+                
+                <div class="pil_hojre">
+                    <button class="nav_knap" onclick="window.location.href='1970.html'">
+                        <!-- Ved klik bliver brugeren taget til outrosiden -->
+                        <i class='bx bxs-right-arrow pil'></i></button>
+                    <p class="footer_p">1970'erne</p>
+                </div>
+            </nav>
+            <!-- Div, hvori flagene vises -->
+            <div class="sprog_flag">
+                <div class="dk">
+                    <img src="images/flag-dk.png" alt="Dansk sprog" class="flag">
+                </div>
+                <div class="eng">
+                    <img src="images/flag-eng.png" alt="English language" class="flag">
+                </div>
+                <div class="tysk">
+                    <img src="images/flag-tysk.png" alt="Deutsche Sprache" class="flag">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutiden</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ikoner -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="nutid.js" defer></script>
+</head>
+
+<body>
+    <!-- Container, der gør hele siden en bestemt bredde og højde -->
+    <div class="tablet_container">
+        <main>
+            <h1 class="nutid_h1">NUTIDEN</h1>
+            <!-- Container til flexboks opsætning -->
+            <div class="nutid_container">
+                <div class="nutid_flex1">
+                    <div class="nutid_ideal">
+                        <h2 class="nutid_ideal_h2">KROPSPOSITIVISME OG SOCIALE MEDIER</h2>
+                        <p class="nutid_ideal_p">
+                            I dag lever vi en tid hvor vi konstant bliver eksponeret for opslag på sociale medier. De fleste
+                            unge mennesker bruger i dag hyppigt medier som tiktok og instagram, og trends derpå skifter
+                            som vinden blæser. De sociale medier er en primær faktor til hvordan kropsidealerne er i dag.
+                            <br><br> På sociale medier kan man se kendte personer som den amerikanske sangeringe Lizzo og
+                            den danske sangerinde Jada som repræsenterer "kropspositivisme". Det er mere okay at have
+                            former. Men hvad påvirker mon dig?
+                        </p>
+                    </div>
+                    <div class="nutid_flex1_afstemning">
+                       
+                        <!-- Første afstemningsboks --> 
+                        <div class="afstemning_container">
+                           <div id="afstemning_foer">
+                                <h3 class="afstemning_h3">HVOR TILFREDS ER DU MED <br> DIN KROP?</h3>
+                               <!-- Knap til at påbygende afstemning --> 
+                                <button id="knap_svar" class="afstemning_knap">
+                                    SVAR
+                                </button>
+                            </div>
+                            
+                            <!-- Anden afstemningsboks, der vises, når man trykke på 'SVAR' knappen i første afstemningsboks-->
+                            <div id="afstemning_efter">
+                                <h3 class="afstemning_h3">HVOR TILFREDS ER DU MED <br> DIN KROP?</h3>
+                                <!-- Knapper med valgmuligheder -->
+                                <div class="afstemning_div">
+                                    <button class="knap_valg">Slet ikke tilfreds</button>
+                                    <button class="knap_valg">Mindre tilfreds</button>
+                                    <button class="knap_valg">Hverken/eller tilfreds</button>
+                                    <button class="knap_valg">Nogenlunde tilfreds</button>
+                                    <button class="knap_valg">Meget tilfreds</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Modal til afstemningsdiagram -->
+                        <div id="modal_afstemning">
+                            <!-- Modal indhold -->
+                            <div class="modal_indhold">
+                                <!-- Video-diagram -->
+                                <video controls id="nutid_diagram"> <!-- Vi vil gerne have automatisk afspilning af videoen, når modalen åbnes, men skærmen bliver ofte blot sort -->
+                                    <source src="video/diagram.mp4" type="video/mp4">
+                                </video>
+                                <!-- Lukkefunktion -->
+                                <i class='bx bx-x' id="modal_luk"></i>
+                            </div>
+                        </div>
+    
+                        <!-- Flexboks til ikoner -->
+                        <div class="nutid_flex2_ikoner">
+                            <img src="images/mundbind.png" alt="Mundbind" class="nutid_ikon mundbind">
+                            <img src="images/tiktok.png" alt="Tiktok" class="nutid_ikon tiktok">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Container til flexboks opsætning -->
+                <div class="nutid_flex2">
+                    <div class="nutid_flex2_diagram">
+                        <div class="video_diagram">
+                            <video autoplay id="video_soejlediagram"> <!-- Vi vil gerne have automatisk afspilning af videoen, når modalen åbnes, men skærmen bliver ofte blot sort -->
+                                <source src="video/soejlediagram.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="nutid_flex2_ikon">
+                            <img src="images/iphone.png" alt="iPhone" class="nutid_ikon_tlf">
+                        </div>
+                    </div>
+    
+                    <!-- Video -->
+                    <div class="video_emilie">
+                        <h3 class="video_emilie_h2">HØR HVAD EMILIE TÆNKER OM KROPSIDEALERNE I DAG</h3>
+                        <video controls id="video_emilie">
+                            <source src="video/interview.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- rund knap henviser til start/intro -->
+            <div class="footer_start">
+                <button class="nav_knap" onclick="window.location.href='index.html'"> 
+                <i class='bx bxs-circle start'></i>
+                </button>
+                <p class="footer_p">Start forfra</p>
+            </div>
+
+            <nav class="nav_boks">
+                <!-- pil V henviser 2010'erne -->
+                <div class="pil_venstre">
+                    <button class="nav_knap" onclick="window.location.href='2010.html'">
+                        <i class='bx bxs-left-arrow pil'></i></button>
+                    <p class="footer_p">2010'erne</p>
+                </div>
+
+                <!-- hjem knap henviser til menu -->
+                <div class="footer_hjem">
+                    <button class="nav_knap" onclick="window.location.href='menu.html'">
+                        <i class='bx bxs-home hjem'></i>
+                    </button>
+                    <p class="footer_p">Menu</p>
+                </div>
+
+                <!-- pil H henviser til outro -->
+                <div class="pil_hojre">
+                    <button class="nav_knap" onclick="window.location.href='outro.html'">
+                        <i class='bx bxs-right-arrow pil'></i></button>
+                    <p class="footer_p">Videre</p>
+                </div>
+            </nav>
+            <!-- Div, hvori flagene vises -->
+            <div class="sprog_flag">
+                <div class="dk">
+                    <img src="images/flag-dk.png" alt="Dansk sprog" class="flag">
+                </div>
+                <div class="eng">
+                    <img src="images/flag-eng.png" alt="English language" class="flag">
+                </div>
+                <div class="tysk">
+                    <img src="images/flag-tysk.png" alt="Deutsche Sprache" class="flag">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

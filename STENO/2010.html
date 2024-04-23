@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2010'erne</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Ikoner -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet" />
+  <!-- Javascript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <audio autoplay id="tyveti_musik">
+    <source src="lyd/2010'erne.mp3">
+</audio>
+  <!-- Container, der gør hele siden en bestemt bredde og højde -->
+  <div class="tablet_container">
+    <main>
+      <h1>2010'ERNE</h1>
+      <!-- Container til flexboks opsætning -->
+      <div class="tier_flex1">
+        <div class="tier_ideal">
+          <h2 class="tier_ideal_h2">Youtube og Moustache trenden</h2>
+          <p class="tier_ideal_p">
+            I 2010'erne befinder du dig i en verden fyldt med Instagram
+            filtre, virale YouTube videoer og sjove Snapchat filtre. Kendisser
+            som Kim Kardashian, Justin Bieber og One Direction fylder på alle
+            forsider og på de sociale medier kan du følge med i alt hvad de
+            laver. Tiden er også fyldt med sjove trends og print som
+            moustache, ugler og galaxyprint.
+          </p>
+        </div>
+        <div class="tier_ideal_2">
+          <h2 class="tier_ideal_h2_2">Store numser og plastikkirurgi</h2>
+          <p class="tier_ideal_p_2">
+            I 2010'erne var det små taljer, store numser og store bryster som
+            var 'in', det ses f.eks ved den amerikanske kendis Kim Kardashian,
+            som ved hjælp af plastikkirurgi har opnået netop denne form. Man
+            finder flere og flere kvinder i fitnesscentrene, hvor man kan
+            forsøge at 'forme' sin krop så den passer til tiden.
+          </p>
+        </div>
+      </div>
+
+        <!-- Stickers -->
+        <div class="tier_instagram_ikon">
+          <img src="images/instagram_ikon.png" alt="instagram" />
+        </div>
+        <div class="tier_kasket">
+          <img src="images/Kasket_ikon.png" alt="kasket" />
+        </div>
+        <div class="tier_fersken">
+          <img src="images/fersken_ikon.png" alt="fersken" />
+        </div>
+      </main>
+      <!-- 1970'er kvinde -->
+      <div class="tier_Kvinde">
+        <img src="images/10kvinde.png" alt="2010'er kvinde" />
+      </div>
+
+     
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!-- rund knap henviser til start/intro -->
+      <div class="footer_start">
+        <button class="nav_knap" onclick="window.location.href='index.html'">
+          <i class="bx bxs-circle start"></i>
+        </button>
+        <p class="footer_p">Start forfra</p>
+      </div>
+
+      <nav class="nav_boks">
+
+        <!-- pil V henviser til 1990'erne -->
+        <div class="pil_venstre">
+          <button class="nav_knap" onclick="window.location.href='1990.html'">
+            <i class="bx bxs-left-arrow pil"></i>
+          </button>
+          <p class="footer_p">1990'erne</p>
+        </div>
+
+        <!-- hjem knap henviser til menuen-->
+        <div class="footer_hjem">
+          <button class="nav_knap" onclick="window.location.href='menu.html'">
+            <i class="bx bxs-home hjem"></i>
+          </button>
+          <p class="footer_p">Menu</p>
+        </div>
+
+        <!-- pil H henviser til nutiden-->
+        <div class="pil_hojre">
+          <button class="nav_knap" onclick="window.location.href='nutiden.html'">
+            <!-- Ved klik bliver brugeren taget til outrosiden -->
+            <i class="bx bxs-right-arrow pil"></i>
+          </button>
+          <p class="footer_p">Nutiden</p>
+        </div>
+      </nav>
+      <!-- Div, hvori flagene vises -->
+      <div class="sprog_flag">
+        <div class="dk">
+          <img src="images/flag-dk.png" alt="Dansk sprog" class="flag" />
+        </div>
+        <div class="eng">
+          <img src="images/flag-eng.png" alt="English language" class="flag" />
+        </div>
+        <div class="tysk">
+          <img src="images/flag-tysk.png" alt="Deutsche Sprache" class="flag" />
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

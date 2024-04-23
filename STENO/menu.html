@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Ikoner -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Javascript -->
+  <script src="script.js" defer></script>
+  <title>Menu</title>
+</head>
+
+<body>
+
+  <div class="tablet_container">
+    <!--Start flex-container-->
+    <div class="menu_flex-container">
+      <div class="menu_top_flex">
+        <!--Top-->
+        <div>
+          <!--Venstre - tom-->
+        </div>
+        <div>
+          <!--Midt-->
+          <!--1970'erne-->
+          <button class="menu_gul" id="menu_70" onclick="window.location.href='1970.html'">1970'erne</button>
+        </div>
+        <div>
+          <!--Højre-->
+        </div>
+      </div>
+
+
+      <!--Hele midter sektionen-->
+      <div id="menu_midt_flex">
+        <!--Midt-->
+        <div id="menu_midt_V_flex">
+          <!--Venstre-->
+          <!--1950'erne-->
+          <div>
+            <button class="menu_orange" onclick="window.location.href='1950.html'">1950'erne</button>
+          </div>
+          <!--Renæssancen-->
+          <div>
+            <button class="menu_lilla" onclick="window.location.href= 'renaessance.html'">Renæssancen</button>
+          </div>
+        </div>
+
+        <div>
+          <!--Karakter billede-->
+          <div id="menu_hoved_cirkel"><img src="images/hoved.png" alt="Karakter hoved" id="menu_billede_hoved"></div>
+        </div>
+
+
+        <div id="menu_midt_H_flex">
+          <!--1990'erne-->
+          <div>
+            <button class="menu_lilla" onclick="window.location.href='1990.html'">1990'erne</button>
+          </div>
+          <!--2010'erne-->
+          <div>
+            <button class="menu_orange" onclick="window.location.href='2010.html'">2010'erne</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <div>
+          <!-- Vestre - tom-->
+        </div>
+        <div>
+          <button class="menu_gul" id="menu_nutiden" onclick="window.location.href='nutiden.html'">Nutiden</button>
+        </div>
+        <div>
+          <!--Højre - tom-->
+        </div>
+        <p id="menu_tekst">Vælg en tidsperiode og dyk ned i tiden <br> og dens syn på kvindekroppen.</p>
+      </div>
+
+      <!--slut flex container-->
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer_start">
+        <button class="nav_knap" onclick="window.location.href='index.html'">
+          <i class="bx bxs-circle start"></i>
+        </button>
+        <p class="footer_p">Start forfra</p>
+      </div>
+      <nav class="nav_boks">
+        <div class="footer_hjem">
+          <button class="nav_knap" onclick="window.location.href='menu.html'"></button>
+    
+        </div>
+        <div class="pil_hojre">
+          <button class="nav_knap" onclick="window.location.href='renaessance.html'">
+            <!-- Ved klik bliver brugeren taget til outrosiden -->
+            <i class="bx bxs-right-arrow pil"></i>
+          </button>
+          <p class="footer_p">Videre</p>
+        </div>
+      </nav>
+      <!-- Div, hvori flagene vises -->
+      <div class="sprog_flag">
+        <div class="dk">
+          <img src="images/flag-dk.png" alt="Dansk sprog" class="flag" />
+        </div>
+        <div class="eng">
+          <img src="images/flag-eng.png" alt="English language" class="flag" />
+        </div>
+        <div class="tysk">
+          <img src="images/flag-tysk.png" alt="Deutsche Sprache" class="flag" />
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

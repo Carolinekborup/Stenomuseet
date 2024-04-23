@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1970'erne</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Ikoner -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!--Musik-->
+    <audio autoplay id="halvfjerds_musik">
+      <source src="lyd/1970'erne.mp3">
+  </audio>
+    <!-- Container, der gør hele siden en bestemt bredde og højde -->
+    <div class="tablet_container">
+      <main>
+        <h1 class="halvfjerds_h1">1970'ERNE</h1>
+        <!-- Container til flexboks opsætning -->
+        <div class="halvfjerds_flex1">
+          <div class="halvfjerds_ideal">
+            <h2 class="halvfjerds_ideal_h2">Disko og kvindebevægelse</h2>
+            <p class="halvfjerds_ideal_p">
+              Du er tilbage i kvindebevægelsens årti 1970'erne. På gaden ser du
+              folk i trompetbukser, platformsko og store solbriller. Fra bilerne
+              på gaden med nedrullede vinduer kan du høre disko sangen Stayin'
+              Alive spille for fuld blæs. Omkring dig sker der en modreaktion på
+              det kvindebillede, vi har kendt førhen, nu skal brysterne være
+              frie og kropsbehåringen gro frit.
+            </p>
+          </div>
+          <div class="halvfjerds_ideal_2">
+            <h2 class="halvfjerds_ideal_h2_2">Frie bryster og langt hår</h2>
+            <p class="halvfjerds_ideal_p_2">
+              I 70'erne blev det naturlige look moderne, kvindernes kroppe blev
+              'sat fri', makeuppen forsvinder, bh'en smides, og håret får lov
+              til at vokse. Derudover så man mange slanke kvinder med lange ben
+              og flade maver.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1970'er kvinde -->
+        <div class="halvfjerdsKvinde">
+          <img src="images/70kvinde.png" alt="1970'er kvinde" />
+        </div>
+
+        <!-- Stickers -->
+        <div class="halvfjers_blomst">
+          <img src="images/Blomst_ikon.png" alt="blomst" />
+        </div>
+        <div class="halvfjers_BH">
+          <img src="images/Bh_ikon.png" alt="BH" />
+        </div>
+        <div class="halvfjers_atomkraft">
+          <img src="images/Atomkraft_ikon.png" alt="atomkraft" />
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+
+        <!-- rund knap henviser til start/intro-->
+        <div class="footer_start">
+          <button class="nav_knap" onclick="window.location.href='index.html'">
+            <i class="bx bxs-circle start"></i>
+          </button>
+          <p class="footer_p">Start forfra</p>
+        </div>
+
+        <nav class="nav_boks">
+          <!-- pil V henviser til 1950'erne -->
+          <div class="pil_venstre">
+            <button class="nav_knap" onclick="window.location.href='1950.html'">
+              <i class="bx bxs-left-arrow pil"></i>
+            </button>
+            <p class="footer_p">1950'erne</p>
+          </div>
+
+          <div class="footer_hjem">
+            <button class="nav_knap" onclick="window.location.href='menu.html'">
+              <i class="bx bxs-home hjem"></i>
+            </button>
+            <p class="footer_p">Menu</p>
+          </div>
+
+          <!-- pil H henviser til 1990'erne -->
+          <div class="pil_hojre">
+            <button
+              class="nav_knap"
+              onclick="window.location.href='1990.html'">
+              <i class="bx bxs-right-arrow pil"></i>
+            </button>
+            <p class="footer_p">1990'erne</p>
+          </div>
+        </nav>
+        <!-- Div, hvori flagene vises -->
+        <div class="sprog_flag">
+          <div class="dk">
+            <img src="images/flag-dk.png" alt="Dansk sprog" class="flag" />
+          </div>
+          <div class="eng">
+            <img
+              src="images/flag-eng.png"
+              alt="English language"
+              class="flag"
+            />
+          </div>
+          <div class="tysk">
+            <img
+              src="images/flag-tysk.png"
+              alt="Deutsche Sprache"
+              class="flag"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

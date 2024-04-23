@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renæssancen</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ikoner -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+     <!--Musik-->
+     <audio autoplay id="ren_musik">
+        <source src="lyd/Renæssancen.mp3">
+    </audio>
+    <div class="tablet_container">
+    
+        <main>
+            <!--Øverste overskrift-->
+            <h1 class="ren_h1">RENÆSSANCEN</h1>
+            <!--Flexbox for alt content uden stickers-->
+
+                <!-- flexbox venstre -->
+            <div id="ren_flex_V">
+                <!--Flexbox for tekst 1-->
+                <div id="ren_flex_tekst1">
+                    <section class="ren_tiden">
+                        <!-- Anden overskrift-->
+                        <h2 class="ren_tiden_h2">DE DOVNE ADELIGE </h2>
+                        <!--Brødtekst-->
+                        <p class="ren_tiden_p">Du er tilbage i renæssancen (år 1536-1660). På gaderne ser du
+                            prostituerede, tyve og tiggere, og befolkningen består af 80% bøndere.<br>
+                            Landets øverste top består af de adelige købmænd, som har råd til at betale sig fra
+                            arbejdet. De kan derfor bruge deres tid på at holde store middage og klæde sig i fine
+                            silkekjoler fra ‘fjerne’ lande</p>
+                    </section>
+
+                    <div id="ren_flex_lut">
+                    <!--Lut sticker-->
+                        <img src="images/lut.png" alt="Lut" id="ren_ikon_lut">
+                    </div>
+                
+                <div id="ren_flex_tekst2">
+                    <section class="ren_ideal">
+                        <h2 class="ren_ideal_h2">FEDME = RIGDOM</h2>
+                        <p class="ren_ideal_p">En fyldig og overvægtig krop var et tegn på rigdom, da det viste at man
+                            havde råd til at lave ingenting og spise store mængder mad. Derudover var det drømmen at
+                            kunne gå i kjoler i silke fra Kina og andre ‘eksotiske’ lande.</p>
+                    </section>
+                </div>
+                   <!--Fjer ikon-->
+                   <div id="ren_ikon_bund">
+                    <div>
+                        <img src="images/fjer.png" alt="Fjer" id="ren_img_fjer">
+                    </div>
+                  <!--penge ikon--> 
+                    <div>
+                        <img src="images/penge.png" alt="Pengesæk" class="ikon" id="ren_img_penge">
+                    </div>
+                </div>
+            </div>
+
+        <!-- flexbox højre -->
+        <div id="ren_flex_H">
+            <!-- Kropsideal -->
+            <div class="ren_krop">
+                <img src="images/renaessance.png" alt="Kropsideal for renæssancekvinden">
+            </div>
+        </div>
+            
+            </div>
+        </main>
+    
+       
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer_start">
+                <!-- Rund knap henviser til start/intro -->
+                <button class="nav_knap" onclick="window.location.href='index.html'">
+                <i class='bx bxs-circle start'></i>
+                </button>
+                <p class="footer_p">Start forfra</p>
+            </div>
+            
+            <nav class="nav_boks">
+                
+                <!-- Hjem knap henviser til menu -->
+                <div class="footer_hjem">
+                    <button class="nav_knap" onclick="window.location.href='menu.html'">
+                        <i class='bx bxs-home hjem'></i>
+                    </button>
+                    <p class="footer_p">Menu</p>
+                </div>
+
+                <div class="pil_hojre">
+                    <button class="nav_knap" onclick="window.location.href='1950.html'"> <!-- Ved klik bliver brugeren taget til outrosiden -->
+                        <i class='bx bxs-right-arrow pil'></i></button>
+                    <p class="footer_p">1950'erne</p>
+                </div>
+            </nav>
+            <!-- Div, hvori flagene vises -->
+            <div class="sprog_flag">
+                <div class="dk">
+                    <img src="images/flag-dk.png" alt="Dansk sprog" class="flag">
+                </div>
+                <div class="eng">
+                    <img src="images/flag-eng.png" alt="English language" class="flag">
+                </div>
+                <div class="tysk">
+                    <img src="images/flag-tysk.png" alt="Deutsche Sprache" class="flag">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

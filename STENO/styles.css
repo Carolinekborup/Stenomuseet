@@ -1,0 +1,858 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FARVER */
+:root {
+    --blaa1: rgba(3, 25, 64, 1);
+    --blaa2: rgba(18, 51, 111, 1);
+    --blaa3: rgba(60, 97, 166, 1);
+    --blaa4: rgba(153, 180, 227, 1);
+
+    --orange1: rgba(208, 58, 19, 1);
+    --orange2: rgba(227, 89, 52, 1);
+    --orange3: rgba(241, 126, 95, 1);
+    --orange4: rgba(255, 169, 146, 1);
+
+    --gul1: rgba(212, 151, 15, 1);
+    --gul2: rgba(223, 168, 46, 1);
+    --gul3: rgba(225, 183, 91, 1);
+    --gul4: rgba(236, 208, 146, 1);
+
+    --lilla1: rgba(104, 76, 205, 1);
+    --lilla2: rgba(136, 118, 201, 1);
+    --lilla3: rgba(161, 144, 220, 1);
+    --lilla4: rgba(194, 183, 232, 1);
+
+}
+
+/* BASAL STYLING */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.9em;
+    font-weight: 500;
+}
+
+.tablet_container {
+    width: 1024px;
+    height: 1529px;
+}
+
+main { /* Alt undtagen footer får margins */
+    margin: 0 4%;
+    padding: 3% 0 0;
+}
+/* ---------------------- 
+--------- INTRO --------
+---------------------- */
+.karakter-intro {
+    position: relative;
+    width: 100%;
+  }
+  
+  .intro_video-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .intro_video-wrapper video {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+
+  .intro_play-knap {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 30%;
+    background-color: var(--lilla2);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 40%;
+  }
+
+  #intro_playKnap img{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+
+  .intro-tekst h1{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    font-size: 4em;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+  
+  .intro-tekst.fade-out h1{
+    opacity: 0;
+  }
+
+  .intro_velkomst-tekst p {
+    position: absolute;
+    top: 2%;
+    font-size: 2.3em;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    text-align: center;
+  }
+  
+  .intro_velkomst-tekst.fade-in p {
+    opacity: 1;
+  }
+
+/* ---------------------- 
+--------- MENU --------
+---------------------- */
+
+/*- Flex box rundt om menuen-*/
+.menu_flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 250px;
+  }
+
+   /* ----------
+      Flexboxe
+   ------------*/
+  /* Øverste flexbox (70'erne) */
+   .menu_top_flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   }
+
+   /* miderste flexbox (fuld midterstykke) */
+   #menu_midt_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+
+   /* miderste flexbox venstre (50'erne + renæssancen) */
+   #menu_midt_V_flex{
+    display: flex;
+    flex-direction: column;
+   }
+
+   #menu_midt_H_flex{
+    display: flex;
+    flex-direction: column;
+   }
+
+  .menu_gul{
+    border: none;
+    border-radius: 100px;
+    background-color: var(--gul2);
+    box-shadow: 4px 4px var(--gul1);
+    width: 190px;
+    height: 190px;
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-left: 420px;
+  }
+
+  .menu_lilla{
+    border: none;
+    border-radius: 100px;
+    background-color: var(--lilla2);
+    box-shadow: 4px 4px var(--lilla1);
+    width: 190px;
+    height: 190px;
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 90px;
+    margin: 50px;
+  }
+
+  .menu_orange{
+    border: none;
+    border-radius: 100px;
+    background-color: var(--orange2);
+    box-shadow: 4px 4px var(--orange1);
+    width: 190px;
+    height: 190px;
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 80px;
+    margin: 50px;
+  }
+
+  /* Character billede */
+  #menu_hoved_cirkel{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 250px;
+    margin-top: 200px;
+  }
+
+  #menu_billede_hoved{
+    border-radius: 100px;
+    background-color: white;
+    width: 200px;
+    height: 220px;
+    margin-top: 20px;
+    margin-left: 27px;
+  }
+
+  #menu_tekst{
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 250px;
+    margin-right: 10px;
+  }
+
+  /* tekst/link på buttons */ 
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+  
+
+/* ---------------------- 
+--------- RENÆSSANCEN ---
+---------------------- */
+
+    /* OPSÆTNING AF FLEXBOKS */
+    .ren_flex {
+        display: flex;
+        gap: 4rem;
+    }
+
+#ren_flex_V{
+    display: flex;
+    justify-content: space-around;
+}
+
+#ren_flex_H{
+    display: flex;
+    justify-content: space-around;
+}
+    
+    #ren_flex_tekst1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ren_flex_tekst2{
+        display: flex;
+    }
+/*Style for overskrifter*/
+    .ren_h1{
+        font-size: 5em;
+        margin: 0;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    
+.ren_tiden_p{
+    margin-right:100px;
+}
+
+.ren_ideal_p{
+    margin-right:100px; 
+}
+
+    /* STYLING AF KROP-BILLEDE */
+    .ren_krop img {
+        height: 950px;
+        width: auto;
+        margin-top: 80px;
+    }
+    
+    /*Style for ikoner*/
+   #ren_ikon_lut{
+    width: 200px;
+    height: 200px;
+    margin-left: 250px;
+    margin-top: 30px;
+   }
+
+   #ren_ikon_bund{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 150px;
+
+   }
+
+   #ren_img_fjer{
+    width: 200px;
+    height: 200px;
+   
+   }
+
+   #ren_img_penge{
+    width: 200px;
+    height: 200px;
+   }
+
+/* ---------------------- 
+-------1950'ERNE --------
+---------------------- */
+
+.halvtreds_flex_container{
+    display: flex;
+    justify-content: center;
+}
+
+/* 1950'er: flexbox venstre */
+#halvtreds_V_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* 1950'erne: styling af billeder + ikoner */
+#halvtreds_img_krop{
+    height: 950px;
+    padding-bottom: 40px;
+    margin-left: -40px;
+    margin-top: 50px;
+}
+
+#halvtreds_img_filmrulle{
+    height: 250px;
+    width: 250px;
+    transform: rotate(350deg);
+    margin-left: 130px;
+    margin-top: -50px;
+}
+
+#halvtreds_img_ms{
+    width: 150px;
+    height: 275px;
+    margin-top: 50px;
+    margin-right: 50px;
+    transform: rotate(10deg);
+}
+
+#halvtreds_img_lp{
+    width: 250px;
+    height: 250px;
+}
+
+/* 1950'er: flexbox højre */
+#halvtreds_H_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+#halvtreds_img_ikonerH{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#halvtreds_musik{
+    display: none;
+}
+
+
+
+/* ---------------------- 
+-------1970'ERNE --------
+---------------------- */
+
+.halvfjerdsKvinde{
+    position: absolute;
+    left: 55%;
+    bottom: 25%;
+}
+
+.halvfjerdsKvinde img{
+    max-width: 80%;
+
+}
+
+.halvfjerds_ideal_p{
+    margin-right: 55%;
+}
+
+.halvfjerds_ideal_2{
+    margin: 20% 45% 10% 10%;
+}
+
+.halvfjers_blomst{
+    position: absolute;
+    left: 42%;
+    bottom: 75%;
+}
+
+.halvfjers_blomst img{
+    width: 50%;
+}
+
+.halvfjers_BH{
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    transform: rotate(10deg);
+}
+
+.halvfjers_atomkraft{
+    position: absolute;
+    left: 60%;
+    top: 78%;
+}
+
+/* ---------------------- 
+-------1990'ERNE --------
+---------------------- */
+
+.halvfemsKvinde {
+    position: absolute;
+    bottom: 20%;
+}
+
+.halvfemsKvinde img{
+    max-width: 80%;
+}
+
+.halvfems_ideal{
+    margin-left:50%;
+    margin-top: 10%;
+}
+
+.halvfems_ideal_2{
+    margin-left:40%;
+    margin-top: 40%;
+}
+
+.halvfems_lava{
+    position: absolute;
+    left: 35%;
+    bottom: 70%;
+}
+
+.halvfems_lava img{
+    width: 40%;
+}
+
+.halvfems_boombox{
+    position: absolute;
+    left: 60%;
+    top: 38%;
+}
+
+.halvfems_boombox img{
+    width: 80%;
+    transform: rotate(10deg);
+}
+
+.halvfems_discman{
+    position: absolute;
+    left: 60%;
+    top: 75%;
+}
+
+.halvfems_discman img{
+    width: 60%;
+}
+
+
+
+/* ---------------------- 
+-------2010'ERNE --------
+---------------------- */
+
+.tier_Kvinde img{
+    position: absolute;
+    max-width: 90%;
+    margin-left: 600px;
+    bottom: 17%;
+}
+
+.tier_ideal_p{
+    margin-right: 55%;
+}
+
+.tier_ideal_2{
+    margin: 20% 40% 10% 10%;
+}
+
+.tier_instagram_ikon{
+    position: absolute;
+    left: 50%;
+    bottom: 80%;
+    transform: rotate(10deg);
+}
+
+.tier_instagram_ikon img{
+    width: 80%;
+}
+
+.tier_kasket{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
+.tier_kasket img{
+    width: 60%;
+}
+
+.tier_fersken{
+    position: absolute;
+    left: 35%;
+    top: 72%;
+    transform: rotate(10deg);
+}
+
+.tier_fersken img{
+    width: 120%;
+}
+/* ---------------------- 
+-------NUTIDEN --------
+---------------------- */
+
+/* ---------------------- 
+-------OUTRO -----------
+---------------------- */
+
+.outro_karakter-intro {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .outro_video-wrapper {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  
+  .outro_video-wrapper video {
+    width: 100%;
+    height: auto;
+  }
+
+  #outro_videoPlayer{
+    width: 80%;
+    
+  }
+
+  #outro_paragraf{
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+    z-index: 1;
+    margin: 5% 10% 10% 10%;
+  }
+
+/* ---------------------- 
+--------- FOOTER --------
+---------------------- */
+.footer {
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(26, 26, 26, 1);
+    border-top: solid white 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_start { /* Tilbage til start-knap */
+    width: 7rem;
+    margin: 0 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hjem, .start, .pil {
+    font-size: 2.7em;
+    color: white;
+}
+
+.nav_boks { /* Flexboks til navigation */
+    display: flex;
+    gap: 3.5rem;
+}
+
+/* Styling af 'frem og tilbage'-knapper */
+.nav_knap {
+    border: 0;
+    background-color: transparent;
+}
+
+.pil_venstre, .pil_hojre, .footer_hjem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling af flag */
+.sprog_flag {
+    width: 8rem;
+    display: flex;
+    gap: .8rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 2%;
+    justify-content: flex-end;
+}
+
+.flag {
+    width: 3.5rem;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+
+
+/* ---------------------- 
+-------- NUTIDEN --------
+---------------------- */
+
+
+/* OPSÆTNING AF FLEXBOKS */
+.nutid_container {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.nutid_flex1 {
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.nutid_flex1_afstemning {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* OPSÆTNING AF FLEXBOKS */
+.nutid_flex2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nutid_flex2_diagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#video_soejlediagram {
+    width: 480px; 
+    height: auto;
+}
+
+ /* Mobil-video */
+.video_emilie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.video_emilie_h2 {
+    width: 75%;
+    margin-bottom: .4rem;
+} 
+
+#video_emilie {
+    width: 300px;
+    height: auto;
+}
+
+/* CONTAINER TIL AFSTEMNING  */
+.afstemning_container {
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#afstemning_foer {
+    width: 100%;
+    background-color: var(--gul1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px 5px var(--gul3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#afstemning_efter {
+    width: 100%;
+    height: 100%;
+    background-color: var(--gul1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px 5px var(--gul3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+.afstemning_knap {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--lilla2);
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgb(64, 64, 64);
+}
+
+.afstemning_div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.knap_valg {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: white;
+    background-color: var(--lilla2);
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgb(64, 64, 64);
+}
+
+/* AFSTEMNING MODAL */
+#modal_afstemning {
+    display: none; /* Modalen vises ikke fra start */
+    position: fixed;
+    z-index: 1;
+    padding-top: 35%; /* Placering af modal */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); /* Opaciteten nedsat */
+}
+
+/* Modal indhold */
+.modal_indhold {
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  /* Lukkeknap */
+  #modal_luk {
+    color: white;
+    font-size: 1.7em;
+    font-weight: 600;
+    padding: 2%;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-color: black;
+    margin-bottom: -40px;
+}
+
+#nutid_diagram {
+    width: 900px; 
+    height: auto;
+}
+
+
+/* STYLING AF IKONER */
+.nutid_flex2_ikoner {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 6rem;
+}
+
+.nutid_ikon_tlf {
+    width: auto;
+    height: 130px;
+    transform: rotate(-30deg)
+}
+
+.nutid_ikon {
+    width: auto;
+    height: 150px;
+}
+
+.tiktok {
+    transform: rotate(20deg);
+}
+

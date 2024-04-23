@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ikoner -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Javacript -->
+    <script src="outro.js" defer></script>
+    <title>Outro</title>
+  </head>
+  <body>
+    <main>
+      <div class="outro_karakter-intro">
+        <div class="outro_tekst">
+          <p id="outro_paragraf"></p>
+        </div>
+        </div>
+
+        <div class="outro_video-wrapper">
+          <video id="outro_videoPlayer">
+            <source src="video/outro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        
+  
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer_start">
+        <button class="nav_knap" onclick="window.location.href='index.html'">
+          <i class="bx bxs-circle start"></i>
+        </button>
+        <p class="footer_p">Start forfra</p>
+      </div>
+      <nav class="nav_boks">
+        <div class="footer_hjem">
+          <button class="nav_knap" onclick="window.location.href='menu.html'">
+            <i class="bx bxs-home hjem"></i>
+          </button>
+          <p class="footer_p">Menu</p>
+        </div>
+      </nav>
+      <!-- Div, hvori flagene vises -->
+      <div class="sprog_flag">
+        <div class="dk">
+          <img src="images/flag-dk.png" alt="Dansk sprog" class="flag" />
+        </div>
+        <div class="eng">
+          <img src="images/flag-eng.png" alt="English language" class="flag" />
+        </div>
+        <div class="tysk">
+          <img src="images/flag-tysk.png" alt="Deutsche Sprache" class="flag" />
+        </div>
+      </div>
+    </footer>
+  </main>
+  </body>
+</html>
