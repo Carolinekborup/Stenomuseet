@@ -47,5 +47,3 @@ modalLuk.onclick = lukModal;
   }
 }
 
-// AFSPILNING AF CIRKELDIAGRAM
-
